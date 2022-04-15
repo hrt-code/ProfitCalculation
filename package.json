@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/assets/sass/style.scss -o ./build/css/main.css --watch",
+    "serve": "live-server ./src",
+    "sass": "sass ./src/assets/sass/style.scss ./build/css/main.css --watch ",
+    "tsc": "tsc -w"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "rxjs": "^7.5.5",
+    "sass": "^1.50.0"
+  }
+}
