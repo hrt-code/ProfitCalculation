@@ -1,16 +1,33 @@
 {
   "scripts": {
-    "watch": "npx tailwindcss -i ./src/assets/sass/style.scss -o ./build/css/main.css --watch",
+    "tailwind:watch": "npx tailwindcss -i ./src/assets/sass/style.scss -o ./build/css/main.css --watch",
     "serve": "live-server ./src",
-    "sass": "sass ./src/assets/sass/style.scss ./build/css/main.css --watch ",
-    "tsc": "tsc -w"
+    "sass:watch": "sass ./src/assets/sass/style.scss ./build/css/main.css --watch ",
+    "tsc:watch": "tsc -w",
+    "dev": "concurrently --kill-others \"npm run tailwind:watch\" \"npm run sass:watch\" \"npm run tsc:watch\""
   },
   "devDependencies": {
-    "tailwindcss": "^3.0.24"
+    "concurrently": "^7.1.0",
+    "tailwindcss": "^3.0.24",
+    "type": "module"
   },
   "dependencies": {
     "live-server": "^1.2.1",
     "rxjs": "^7.5.5",
     "sass": "^1.50.0"
-  }
+  },
+  "name": "package",
+  "version": "1.0.0",
+  "description": "profit calculation",
+  "main": "tailwind.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrt-code/ProfitCalculation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrt-code/ProfitCalculation/issues"
+  },
+  "homepage": "https://github.com/hrt-code/ProfitCalculation#readme"
 }
