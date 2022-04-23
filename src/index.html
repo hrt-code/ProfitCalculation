@@ -12,30 +12,131 @@
 <body>
 
 
-    <div class="container mx-auto bg-indigo-200 max-w-4xl p-10 mt-5 rounded">
+    <div class="container mx-auto bg-indigo-200 max-w-6xl p-10 mt-5 rounded border-indigo-600   ">
 
         <div class="flex flex-col ">
 
-            <div class="w-32 ">
+            <!-- elements -->
+            <div class="w-36 flex flex-col justify-start items-center ">
 
-                <!-- input -->
-                <input type="text" id="money" class=" w-full
-                border-gray-500
-                 text-center rounded
-                 text-sm text-gray-800
-                 focus:outline-0
-                 focus:shadow
-                 p-1 " placeholder="میزان پول">
+                <!-- money input -->
+                <div class="flex flex-col">
+                    <label for="init-money" class="text-xs mt-2 mb-1 mr-1 text-gray-600">سرمایه اولیه (تومان) :</label>
+                    <input type="text" id="init-money" class=" w-36
+                    border-gray-500
+                     text-center rounded
+                     text-sm text-gray-800
+                     focus:outline-0
+                     focus:shadow
+                     p-1 " placeholder="به تومان وارد کنید">
+                </div>
 
-                 <!-- submit btn -->
+                <!-- day Count -->
+                <div class="flex flex-col">
+                    <label for="day-count" class="text-xs mt-2 mb-1 mr-1 text-gray-600">تعداد روز :</label>
+                    <input type="number" id="day-count" class=" w-36
+                            text-center rounded
+                            text-sm text-gray-800
+                            focus:outline-0
+                            focus:shadow
+                            p-1 " placeholder="">
+                </div>
+
+                <!-- daily profit -->
+                <div class="flex flex-col">
+                    <label for="daily-profit" class="text-xs mt-2 mb-1 mr-1 text-gray-600">میزان سود روزانه :</label>
+                    <input type="text" id="daily-profit" class=" w-36
+                    text-center rounded
+                    text-sm text-gray-800
+                    focus:outline-0
+                    p-1 " placeholder="%">
+                </div>
+
+                <!-- week Count -->
+                <div class="flex flex-col">
+                    <label for="week-count" class="text-xs mt-2 mb-1 mr-1 text-gray-600">تعداد هفته :</label>
+                    <input type="number" id="week-count" class=" w-36
+                            text-center rounded
+                            text-sm text-gray-800
+                            focus:outline-0
+                            focus:shadow
+                            p-1 " placeholder="">
+                </div>
+
+                <!-- weekly profit -->
+                <div class="flex flex-col">
+                    <label for="weekly-profit" class="text-xs mt-2 mb-1 mr-1 text-gray-600">میزان سود هفتگی :</label>
+                    <input type="text" id="weekly-profit" class=" w-36
+                        text-center rounded
+                        text-sm text-gray-800
+                        focus:outline-0
+                        focus:shadow
+                        p-1 " placeholder="%">
+                </div>
+
+                <!-- month Count -->
+                <div class="flex flex-col">
+                    <label for="month-count" class="text-xs mt-2 mb-1 mr-1 text-gray-600">تعداد ماه :</label>
+                    <input type="number" id="month-count" class=" w-36
+                        text-center rounded
+                        text-sm text-gray-800
+                        focus:outline-0
+                        focus:shadow
+                        p-1 " placeholder="">
+                </div>
+
+                <!-- monthly profit -->
+                <div class="flex flex-col">
+                    <label for="monthly-profit" class="text-xs mt-2 mb-1 mr-1 text-gray-600">میزان سود ماهیانه :</label>
+                    <input type="text" id="monthly-profit" class=" w-36
+                        text-center rounded
+                        text-sm text-gray-800
+                        focus:outline-0
+                        focus:shadow
+                        p-1 " placeholder="%">
+                </div>
+
+
+
+
+                <!-- submit btn -->
                 <button
-                    class="bg-indigo-600 text-sm w-full  rounded p-1 mt-2 text-white hover:bg-indigo-700 duration-300 hover:shadow hover:shadow-indigo-500 ">
+                    class="bg-indigo-600 text-sm w-full rounded p-1 mt-4 text-white hover:bg-indigo-700 duration-300 hover:shadow hover:shadow-indigo-500 ">
                     حساب کن
                 </button>
 
 
 
+
+
+
+                <!-- period type select -->
+                <!-- <div class="flex flex-col  ml-2">
+                    <label for="period-type" class="text-xs mb-2 mr-1 text-gray-500"> نوع دوره :</label>
+                    <div>
+                        <select id="period-type" class="form-select appearance-none block  px-3 py-1 w-36
+                    text-sm  text-gray-700 bg-white bg-clip-padding bg-no-repeat
+                    border border-solid border-gray-300 rounded
+                    transition ease-in-out m-0
+                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                            aria-label="Default select example">
+                            <option value="day">روزانه</option>
+                            <option value="week">هفتگی</option>
+                            <option value="month">ماهیانه</option>
+                        </select>
+                    </div>
+                </div> -->
+
+
+
+
+
+
+
+
             </div>
+
+
 
 
         </div>
